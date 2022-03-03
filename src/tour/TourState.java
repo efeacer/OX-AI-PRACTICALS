@@ -2,6 +2,7 @@ package tour;
 
 import java.util.Collections;
 import java.util.LinkedHashSet;
+import java.util.Objects;
 import java.util.Set;
 
 import search.Action;
@@ -27,5 +28,19 @@ public class TourState implements State {
 		Set<City> newVisitedCities = new LinkedHashSet<City>(visitedCities);
 		newVisitedCities.add(road.targetCity);
 		return new TourState(newVisitedCities, road.targetCity);
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		TourState tourState = (TourState) o;
+		return Objects.equals(visitedCities, tourState.visitedCities) &&
+				Objects.equals(currentCity, tourState.currentCity);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(visitedCities, currentCity);
 	}
 }

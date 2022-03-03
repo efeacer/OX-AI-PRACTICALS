@@ -1,9 +1,6 @@
 package tour;
 
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class City {
 	protected final String name;
@@ -27,5 +24,20 @@ public class City {
 			return Integer.MAX_VALUE;
 		else
 			return distance.intValue();
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		City city = (City) o;
+		return Objects.equals(name, city.name) &&
+				Objects.equals(outgoingRoads, city.outgoingRoads) &&
+				Objects.equals(shortestDistanceByCity, city.shortestDistanceByCity);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(name, outgoingRoads, shortestDistanceByCity);
 	}
 }

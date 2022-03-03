@@ -10,5 +10,9 @@
 
 ### Task 2: State Equality 
 
+- ```State.java``` The notion of equality is added by adding ```equals``` and ```hashCode``` methods.
+- ```Tiles.java``` Equality is implemented (auto Intelli J override) 
+- ```City.java``` Equality is implemented (auto Intelli J override)
+- ```TourState.java``` Equality is implemented (auto Intelli J override)
 
 ## Practical 2
