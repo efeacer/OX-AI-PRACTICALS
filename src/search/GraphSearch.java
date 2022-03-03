@@ -3,6 +3,10 @@ package search;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * Implements the Graph Search algorithm.
+ * @author Efe Acer
+ */
 public class GraphSearch implements Search {
 
     private final Frontier frontier;

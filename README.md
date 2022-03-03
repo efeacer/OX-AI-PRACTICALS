@@ -25,4 +25,10 @@
 - ```maxNodesStored``` is added to ***Frontier*** files keep track of the maximum number of nodes stored on the 
   frontier since the frontier was created as a memory tracker.
 
+### Task 4: Implement Iterative Deepening (Optional)
+
+- ```IterativeDeepeningSearch.java``` Encapsulates the ***Iterative Deepening Tree Search*** algorithm.
+- ```depth``` field is added to ```Node.java```.
+
+
 ## Practical 2

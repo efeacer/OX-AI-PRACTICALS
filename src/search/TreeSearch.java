@@ -1,5 +1,9 @@
 package search;
 
+/**
+ * Implements the Tree Search algorithm.
+ * @author Efe Acer
+ */
 public class TreeSearch implements Search {
 
     private final Frontier frontier;
