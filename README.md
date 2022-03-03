@@ -15,4 +15,14 @@
 - ```City.java``` Equality is implemented (auto Intelli J override)
 - ```TourState.java``` Equality is implemented (auto Intelli J override)
 
+### Task 3: Encapsulate Search Algorithms
+
+- ```Search.java``` The ***Search*** interface.
+- ```TreeSearch.java``` Encapsulates the ***Tree Search*** algorithm.
+- ```GraphSearch.java``` Encapsulates the ***Graph Search*** algorithm.
+- ```numNodesGenerated``` is added to ***Search*** files keep track of the number of nodes generated in a 
+  ```solve``` execution as a performance tracker.
+- ```maxNodesStored``` is added to ***Frontier*** files keep track of the maximum number of nodes stored on the 
+  frontier since the frontier was created as a memory tracker.
+
 ## Practical 2

@@ -9,11 +9,17 @@ import java.util.Queue;
  */
 public class BreadthFirstFrontier implements Frontier {
 
-    Queue<Node> queue = new LinkedList<>();
+    private final Queue<Node> queue = new LinkedList<>();
+
+    private int maxNodesStored = 0;
 
     @Override
     public void add(Node node) {
         queue.add(node);
+        int queueSize = queue.size();
+        if (queueSize > maxNodesStored) {
+            maxNodesStored = queueSize;
+        }
     }
 
     @Override
@@ -29,5 +35,10 @@ public class BreadthFirstFrontier implements Frontier {
     @Override
     public Node remove() {
         return queue.remove();
+    }
+
+    @Override
+    public int maxNodesStored() {
+        return maxNodesStored;
     }
 }

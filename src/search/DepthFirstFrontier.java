@@ -8,11 +8,17 @@ import java.util.Stack;
  */
 public class DepthFirstFrontier implements Frontier {
 
-    Stack<Node> stack = new Stack<>();
+    private final Stack<Node> stack = new Stack<>();
+
+    private int maxNodesStored = 0;
 
     @Override
     public void add(Node node) {
         stack.add(node);
+        int stackSize = stack.size();
+        if (stackSize > maxNodesStored) {
+            maxNodesStored = stackSize;
+        }
     }
 
     @Override
@@ -28,5 +34,10 @@ public class DepthFirstFrontier implements Frontier {
     @Override
     public Node remove() {
         return stack.pop();
+    }
+
+    @Override
+    public int maxNodesStored() {
+        return maxNodesStored;
     }
 }

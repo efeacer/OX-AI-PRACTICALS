@@ -28,4 +28,10 @@ public interface Frontier {
      * @return The node removed from the Frontier
      */
     Node remove();
+
+    /**
+     * Returns the maximum number of nodes stored on the Frontier since it is created.
+     * @return The maximum number of nodes stored on the Frontier since it is created
+     */
+    int maxNodesStored();
 }
