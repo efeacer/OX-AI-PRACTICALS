@@ -2,9 +2,9 @@ package search;
 
 public class IterativeDeepeningTreeSearch implements Search {
 
-    private static final int MAX_DEPTH = 15;
+    private static final int MAX_DEPTH = 1000;
 
-    private final DepthFirstFrontier depthFirstFrontier = new DepthFirstFrontier();
+    public DepthFirstFrontier depthFirstFrontier = new DepthFirstFrontier();
 
     private int numNodesGenerated;
 

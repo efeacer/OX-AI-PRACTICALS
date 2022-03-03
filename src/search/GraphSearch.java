@@ -9,11 +9,11 @@ import java.util.Set;
  */
 public class GraphSearch implements Search {
 
-    private final Frontier frontier;
+    public Frontier frontier;
 
     private int numNodesGenerated;
 
-    GraphSearch(Frontier frontier) {
+    public GraphSearch(Frontier frontier) {
         this.frontier = frontier;
     }
 

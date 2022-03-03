@@ -6,11 +6,11 @@ package search;
  */
 public class TreeSearch implements Search {
 
-    private final Frontier frontier;
+    public Frontier frontier;
 
     private int numNodesGenerated;
 
-    TreeSearch(Frontier frontier) {
+    public TreeSearch(Frontier frontier) {
         this.frontier = frontier;
     }
 

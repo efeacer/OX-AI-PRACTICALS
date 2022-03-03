@@ -30,5 +30,10 @@
 - ```IterativeDeepeningSearch.java``` Encapsulates the ***Iterative Deepening Tree Search*** algorithm.
 - ```depth``` field is added to ```Node.java```.
 
+### Task 5: Compare Efficiency
+
+- ```Main.java``` contains the tests. Graph Search algorithms tend to explore and store fewer nodes as they 
+  keep track of explored nodes and do not re-explore. Breadth First Search algorithms also tend to explore fewer
+  nodes as they have strong optimality guarantees for uniform cost edges, this is not always the case though.
 
 ## Practical 2

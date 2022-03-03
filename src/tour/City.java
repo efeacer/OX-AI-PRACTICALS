@@ -25,19 +25,4 @@ public class City {
 		else
 			return distance.intValue();
 	}
-
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (o == null || getClass() != o.getClass()) return false;
-		City city = (City) o;
-		return Objects.equals(name, city.name) &&
-				Objects.equals(outgoingRoads, city.outgoingRoads) &&
-				Objects.equals(shortestDistanceByCity, city.shortestDistanceByCity);
-	}
-
-	@Override
-	public int hashCode() {
-		return Objects.hash(name, outgoingRoads, shortestDistanceByCity);
-	}
 }
