@@ -37,3 +37,9 @@
   nodes as they have strong optimality guarantees for uniform cost edges, this is not always the case though.
 
 ## Practical 2
+
+### Task 1: Implement Best-First Search
+
+- ```NodeFunction.java``` The interface to define mappings from nodes to the nodes desirability 
+  value as an integer.
+- ```value``` field is added to the ```Node``` class.
