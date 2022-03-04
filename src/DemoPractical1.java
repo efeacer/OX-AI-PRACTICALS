@@ -1,10 +1,9 @@
-import npuzzle.NPuzzlePrinting;
 import npuzzle.Tiles;
 import npuzzle.TilesGoalTest;
 import search.*;
 import tour.*;
 
-public class Main {
+public class DemoPractical1 {
 
     private static final String SEPARATOR1 = "==============================";
     private static final String SEPARATOR2 = "------------------------------";

@@ -13,10 +13,11 @@ public class BestFirstFrontier implements Frontier {
 
     private final NodeFunction nodeFunction;
 
-    private int maxNodesStored = 0;
+    private int maxNodesStored;
 
     public BestFirstFrontier(NodeFunction nodeFunction) {
         this.nodeFunction = nodeFunction;
+        maxNodesStored = 0;
     }
 
     @Override
