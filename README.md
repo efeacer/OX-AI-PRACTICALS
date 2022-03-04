@@ -43,3 +43,19 @@
 - ```NodeFunction.java``` The interface to define mappings from nodes to the nodes desirability 
   value as an integer.
 - ```value``` field is added to the ```Node``` class.
+- ```BestFirstFrontier.java``` Implements the ***Best First Frontier*** using a Priority Queue.
+
+### Task 2: Implement the A* Node Function
+
+- ```Action.java``` interface is extended by adding the ```cost``` method.
+- ```Node.java``` interface is extended by adding the ```pathCost``` field that keeps track of the 
+  cost of the path from the root to the node.
+- ```AStarFunction.java``` is implemented to incorporate heuristics to the path costs.
+
+### Task 2: Implement a Heuristic for the n-Puzzle
+
+- ```MisplacedTilesHeuristicFunction.java``` implements a heuristic for the n-Puzzle problem.
+
+### Task 3 (Optional): Implement a Heuristic for the Romania Tour
+
+### Task 4: Compare Efficiency
